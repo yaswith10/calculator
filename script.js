@@ -1,7 +1,9 @@
 let buttons = document.getElementsByTagName("button");
+let clickAudio = new Audio("click.wav");
 let str = "";
 Array.from(buttons).forEach((button)=>{
     button.addEventListener("click",()=>{
+        clickAudio.play();
         if(button.innerHTML == "AC"){
             str = "";
             console.log(str);
